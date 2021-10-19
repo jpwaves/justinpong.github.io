@@ -1,25 +1,38 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import logo from '../logo.svg';
-import './app.css';
+import './app.scss';
+import NavigationBar from './nav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid>
+      <Row>
+        <Col>
+          <NavigationBar />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          // insert welcome
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          // insert about me
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          // insert projects carousel
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          // insert contact info
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
