@@ -5,14 +5,22 @@ import './nav.scss';
 class NavigationBar extends Component {
     render() {
         return (
-            <Navbar expand="lg" fixed="top">
-                <Container>
-                    <Navbar.Brand href="#home">Justin Pong</Navbar.Brand>
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#">About</Nav.Link>
-                        <Nav.Link href="#">Projects</Nav.Link>
-                        <Nav.Link href="#">Resume</Nav.Link>
-                        <Nav.Link href="#">Contact</Nav.Link>
+            <Navbar expand="lg" fixed="top" className="p-3">
+                <Container fluid className="mx-5">
+                    <Navbar.Brand href="#welcome">Justin Pong</Navbar.Brand>
+                    <Nav justify className="flex-fill flex-row justify-content-end align-items-center">
+                        <Nav.Item className="me-3 flex-grow-0">
+                            <Nav.Link href="#about">About</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="mx-3 flex-grow-0">
+                            <Nav.Link href="#projects">Projects</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="mx-3 flex-grow-0">
+                            <Nav.Link href="#resume">Resume</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="ms-3 flex-grow-0">
+                            <Nav.Link href="#contact">Contact</Nav.Link>
+                        </Nav.Item>
                     </Nav>
                 </Container>
             </Navbar>

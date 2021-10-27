@@ -1,8 +1,9 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import logo from '../logo.svg';
+import About from './about';
 import './app.scss';
 import NavigationBar from './nav';
+import Welcome from './welcome';
 
 function App() {
   return (
@@ -12,22 +13,22 @@ function App() {
           <NavigationBar />
         </Col>
       </Row>
-      <Row>
+      <Row id="welcome" className="vh-100 justify-content-center align-items-center">
         <Col>
-          // insert welcome
+          <Welcome />
         </Col>
       </Row>
-      <Row>
-        <Col>
-          // insert about me
+      <Row id="about" className="vh-100 justify-content-center align-items-center">
+        <Col lg={6}>
+          <About />
         </Col>
       </Row>
-      <Row>
+      <Row id="projects" className="vh-100 justify-content-center align-items-center">
         <Col>
           // insert projects carousel
         </Col>
       </Row>
-      <Row>
+      <Row id="contact" className="vh-100 justify-content-center align-items-center">
         <Col>
           // insert contact info
         </Col>
