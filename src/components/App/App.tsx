@@ -1,16 +1,15 @@
-import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import About from './about';
-import './app.scss';
-import NavigationBar from './nav';
-import Welcome from './welcome';
+import About from '../About/About';
+import Navigation from '../Navigation/Navigation';
+import Welcome from '../Hero/Welcome';
+import './App.scss';
 
-function App() {
+export default function App() {
   return (
     <Container fluid>
       <Row>
         <Col>
-          <NavigationBar />
+          <Navigation />
         </Col>
       </Row>
       <Row id="welcome" className="vh-100 justify-content-center align-items-center">
@@ -36,5 +35,3 @@ function App() {
     </Container>
   );
 }
-
-export default App;
