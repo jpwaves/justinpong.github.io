@@ -1,10 +1,18 @@
 /* The following block can be included in a custom.scss */
+$raisin-black: #1e212bff;
+$french-lilac: #7f6a93;
+$french-lilac-muted: #9a84af;
+$light-gray: #d6d2d2ff;
+$pale-purple-pantone: #f1e4f3ff;
+$maximum-blue-green: #59c3c3ff;
 
 /* make the customizations */
 $theme-colors: (
-    "info": tomato,
-    "danger": teal
+    bkgd: $raisin-black,
+    heading: $pale-purple-pantone,
+    content: $french-lilac-muted,
+    accent: $maximum-blue-green
 );
 
 /* import bootstrap to set changes */
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';

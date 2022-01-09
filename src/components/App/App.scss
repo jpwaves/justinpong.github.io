@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap');
 
-* {
+body {
+  background-color: var(--bs-bkgd);
+  color: var(--bs-content);
   font-family: 'Arimo', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bs-heading);
 }
