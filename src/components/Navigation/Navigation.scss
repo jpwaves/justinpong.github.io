@@ -1,0 +1,17 @@
+.darkBkgd {
+    background-color: var(--bs-bkgd);
+}
+
+.lightText {
+    color: var(--bs-heading);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: var(--bs-heading) !important;
+}
+
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--bs-content) !important;
+}
