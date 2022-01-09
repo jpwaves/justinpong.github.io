@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+@import "/src/custom.scss";
+
+.welcome-container {
+    width: 50%;
+}
+
+@include media-breakpoint-down(md) { 
+    .welcome-container {
+        width: 100%;
+    }
+}
+
+.title {
+    font-size: 4rem;
+}
+
+p {
+    width: 50%;
+    margin: 0.5em 0;
+}
+
+@include media-breakpoint-down(xs) {
+    p {
+        width: 100%;
+    }
+}

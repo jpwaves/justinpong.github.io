@@ -1,7 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import About from '../About/About';
 import Navigation from '../Navigation/Navigation';
-import Welcome from '../Hero/Welcome';
+import Welcome from '../Welcome/Welcome';
 import './App.scss';
 
 export default function App() {

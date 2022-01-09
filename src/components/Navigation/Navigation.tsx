@@ -3,8 +3,8 @@ import './Navigation.scss';
 
 export default function Navigation() {
     return (
-        <Navbar expand="lg" fixed="top" className="p-3">
-            <Container fluid className="mx-5">
+        <Navbar expand="lg" fixed="top">
+            <Container fluid className="mx-5-sm">
                 <Navbar.Brand href="#welcome">Justin Pong</Navbar.Brand>
                 <Nav justify className="flex-fill flex-row justify-content-end align-items-center">
                     <Nav.Item className="me-3 flex-grow-0">
